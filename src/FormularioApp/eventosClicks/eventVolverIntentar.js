@@ -1,5 +1,4 @@
 import { reiniciar } from "../helpers/reiniciar";
-import { vanillaToast } from "vanilla-toast";
 
 export const eventVolverIntentar = (
   formulario,

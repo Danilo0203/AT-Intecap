@@ -1,6 +1,6 @@
 import { eventValidarForm } from "./eventosClicks/eventValidarForm";
 import { eventVolverIntentar } from "./eventosClicks/eventVolverIntentar";
-import { renderPreguntas } from "./renderPreguntas/renderPreguntas";
+import { renderPreguntas } from "./renderItemsList/renderPreguntas";
 
 (() => {
   const formulario = document.forms[0];
@@ -34,5 +34,4 @@ import { renderPreguntas } from "./renderPreguntas/renderPreguntas";
       countIncorrectas
     )
   );
- 
 })();

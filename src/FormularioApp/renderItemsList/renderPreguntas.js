@@ -1,10 +1,9 @@
 import arrayShuffle from "array-shuffle";
 import { listaAleatoria } from "../helpers/desordenarRespuestas";
 
+const lista = document.createElement("ol");
 export const renderPreguntas = (formulario) => {
   let formularioAleatorio = listaAleatoria();
-
-  const lista = document.createElement("ol");
 
   formularioAleatorio.map((item) => {
     const listaItem = document.createElement("li"),

@@ -1,3 +1,4 @@
+import { renderRespuestas } from "../renderItemsList/renderRespuestas";
 import { celebracion } from "../utils/confetti";
 
 export const eventValidarForm = (
@@ -15,10 +16,10 @@ export const eventValidarForm = (
 
   formulario.classList.add("hidden");
   resultados.classList.remove("hidden");
-
+  const respuestasUsuario = {};
   for (let i = 0; i < Object.entries(data).length; i++) {
     const [key, value] = Object.entries(data)[i];
-
+    respuestasUsuario[key] = value;
     if ("b" === value) {
       ++countCorrectas;
       respuestasCorrectas.textContent = countCorrectas;
@@ -28,4 +29,5 @@ export const eventValidarForm = (
     }
   }
   celebracion(countCorrectas);
+  renderRespuestas(data, respuestasUsuario);
 };

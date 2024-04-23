@@ -1,7 +1,7 @@
 import confetti from "canvas-confetti";
 
 export const celebracion = (countCorrectas) => {
-  if (countCorrectas < 1) return;
+  if (countCorrectas < 6) return;
   let animacion = confetti;
 
   let duration = 3000;

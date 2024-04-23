@@ -9,6 +9,9 @@ html {
 ol {
   text-align: start;
   padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   & li {
     gap: 0.5rem;
     font-weight: 700;
@@ -19,10 +22,19 @@ ol {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem 1rem;
-      padding-bottom: 2rem;
+
       & label {
         font-weight: 400;
+        display: flex;
+        gap: 0.5rem;
       }
     }
+  }
+}
+
+.respuestas {
+  & p {
+    font-weight: 400;
+    text-wrap: pretty;
   }
 }
