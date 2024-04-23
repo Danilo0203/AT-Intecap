@@ -6,13 +6,23 @@ html {
   color-scheme: dark;
 }
 
-.custom {
-  font-size: 1.1rem;
-  background-color: #159957;
-  position: absolute;
-  top: 1rem;
-  right: 0.5rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  font-weight: 700;
+ol {
+  text-align: start;
+  padding: 1rem 0;
+  & li {
+    gap: 0.5rem;
+    font-weight: 700;
+    & h4 {
+      font-weight: 700;
+    }
+    & .label-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      padding-bottom: 2rem;
+      & label {
+        font-weight: 400;
+      }
+    }
+  }
 }

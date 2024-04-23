@@ -12,5 +12,4 @@ export const eventVolverIntentar = (
   formulario.classList.remove("hidden");
   resultados.classList.add("hidden");
   reiniciar(formulario, respuestasCorrectas, respuestasIncorrectas, countCorrectas, countIncorrectas);
-  vanillaToast.info("¡Responde todas las preguntas!", { className: "custom" });
 };

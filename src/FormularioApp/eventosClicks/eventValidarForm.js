@@ -9,7 +9,6 @@ export const eventValidarForm = (
   countCorrectas,
   countIncorrectas
 ) => {
-  console.log(formulario);
   e.preventDefault();
   const formData = new FormData(formulario);
   const data = Object.fromEntries(formData);

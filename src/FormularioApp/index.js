@@ -34,4 +34,5 @@ import { renderPreguntas } from "./renderPreguntas/renderPreguntas";
       countIncorrectas
     )
   );
+ 
 })();
